@@ -4,8 +4,8 @@ import { AiOutlineDownload } from "react-icons/ai";
 import Particle from "../Particle";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import pdfEn from "../../Assets/../Assets/Moetaz_doghma_anglais.pdf";
-import pdfFr from "../../Assets/../Assets/Moetaz_Doghman_Resume français.pdf";
+import pdfEn from "../../Assets/../Assets/Moetaz_doghman_anglais.pdf";
+import pdfFr from "../../Assets/../Assets/Moetaz_Doghman français.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function ResumeNew() {
@@ -31,7 +31,7 @@ function ResumeNew() {
             href={pdfEn}
             download="Moetaz_Doghman_Resume_english.pdf"
             target="_blank"
-            style={{ maxWidth: "250px", marginRight: "20px" }}
+            style={{ maxWidth: "50%", marginBottom: "10px" , marginLeft: "50px" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV (English)
@@ -40,7 +40,7 @@ function ResumeNew() {
             variant="primary"
             href={pdfFr}
             download="Moetaz_Doghman_Resume_français.pdf"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "50%" ,  marginLeft: "50px"  }}
           >
             <AiOutlineDownload />
             &nbsp;Télécharger CV (Français)
