@@ -17,9 +17,9 @@ function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
-  const service_key = process.env.REACT_APP_service_key;
-  const template_key = process.env.REACT_APP_template_key;
-  const public_key = process.env.REACT_APP_public_key;
+  // const service_key = process.env.REACT_APP_service_key;
+  // const template_key = process.env.REACT_APP_template_key;
+  // const public_key = process.env.REACT_APP_public_key;
 
   const formik = useFormik({
     initialValues: {
@@ -32,7 +32,7 @@ function ContactForm() {
       setIsSubmitting(true);
 
       emailjs
-        .sendForm(service_key, template_key, form.current, public_key)
+        .sendForm("service_69h98cr", "template_s59a19x", form.current, "k-Bz001Pg-NrxsLLx")
         .then(
           (result) => {
             console.log(result.text);
