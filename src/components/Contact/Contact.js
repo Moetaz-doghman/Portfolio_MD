@@ -4,6 +4,7 @@ import ContactCard from "./ContactCard";
 import emailjs from "@emailjs/browser";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import Particle from "../Particle";
 
 const validationSchema = Yup.object().shape({
   user_email: Yup.string().email("Invalid email").required("Required"),
@@ -54,6 +55,7 @@ function ContactForm() {
   return (
     <div>
       <Container fluid className="contact-section">
+        <Particle/>
         <Container>
           <Row style={{ justifyContent: "center", padding: "10px" }}>
             <Col
