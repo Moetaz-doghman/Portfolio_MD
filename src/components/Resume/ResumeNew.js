@@ -14,7 +14,7 @@ function ResumeNew() {
 
   useEffect(() => {
     setWidth(window.innerWidth);
-    console.log(numPages)
+    console.log(numPages);
   }, [numPages]);
 
   function onDocumentLoadSuccess({ numPages }) {
@@ -31,7 +31,11 @@ function ResumeNew() {
             href={pdfEn}
             download="Moetaz_Doghman_Resume_english.pdf"
             target="_blank"
-            style={{ maxWidth: "50%", marginBottom: "10px" , marginLeft: "50px" }}
+            style={{
+              maxWidth: "50%",
+              marginBottom: "10px",
+              marginLeft: "50px",
+            }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV (English)
@@ -40,15 +44,14 @@ function ResumeNew() {
             variant="primary"
             href={pdfFr}
             download="Moetaz_Doghman_Resume_français.pdf"
-            style={{ maxWidth: "50%" ,  marginLeft: "50px"  }}
+            style={{ maxWidth: "50%", marginLeft: "50px" }}
           >
             <AiOutlineDownload />
             &nbsp;Télécharger CV (Français)
           </Button>
         </Row>
-
         <Row className="resume">
-          <div style={{ width: "50%", float: "left" }}>
+          <div style={{ width: "100%", clear: "both" }}>
             <Document
               file={pdfEn}
               onLoadSuccess={onDocumentLoadSuccess}
@@ -57,9 +60,7 @@ function ResumeNew() {
               <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
             </Document>
           </div>
-        </Row>
-        <Row className="resume">
-          <div style={{ width: "50%", float: "left" }}>
+          <div style={{ width: "100%", clear: "both", paddingTop: "0px" }}>
             <Document
               file={pdfEn}
               onLoadSuccess={onDocumentLoadSuccess}

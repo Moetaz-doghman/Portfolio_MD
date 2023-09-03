@@ -768,3 +768,9 @@ button:focus {
   padding-top: 10px !important;
   text-align: left !important;
 }
+
+
+.more-about {
+  text-align: center !important;
+  padding-top: 50px;
+}

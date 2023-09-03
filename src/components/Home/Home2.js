@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import AboutCard from "../About/AboutCard";
+import { Link } from "react-router-dom";
 
 function Home2() {
   return (
@@ -27,6 +28,119 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
+        <Row>
+          <Col md={12} className="more-about">
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <hr
+                style={{
+                  background: "#1B668A", // Set the color to purple
+                  height: "4px",
+                  width: "50%",
+                }}
+              />
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                <p
+                  style={{
+                    fontSize: "1.5em",
+                    marginRight: "10px",
+                    cursor: "pointer",
+                    color: "#fff",
+                  }}
+                >
+                  &nbsp;More <span className="purple">INFO </span> ....
+                </p>
+              </Link>
+            </div>{" "}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <hr
+                style={{
+                  background: "#1B668A",
+                  height: "4px",
+                  width: "50%",
+                }}
+              />
+              <Link to="/project" style={{ textDecoration: "none" }}>
+                <p
+                  style={{
+                    fontSize: "1.5em",
+                    marginRight: "10px",
+                    cursor: "pointer",
+                    color: "#fff",
+                  }}
+                >
+                  &nbsp;Explore my <span className="purple">PROJECTS </span> ....
+                </p>
+              </Link>
+            </div>{" "}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <hr
+                style={{
+                  background: "#1B668A",
+                  height: "4px",
+                  width: "50%",
+                }}
+              />
+              <Link to="/resume" style={{ textDecoration: "none" }}>
+                <p
+                  style={{
+                    fontSize: "1.5em",
+                    marginRight: "10px",
+                    cursor: "pointer",
+                    color: "#fff",
+                  }}
+                >
+                 &nbsp; Check out my <span className="purple">CV </span> ....
+                </p>
+              </Link>
+            </div>{" "}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <hr
+                style={{
+                  background: "#1B668A",
+                  height: "4px",
+                  width: "50%",
+                }}
+              />
+              <Link to="/contact" style={{ textDecoration: "none" }}>
+                <p
+                  style={{
+                    fontSize: "1.5em",
+                    marginRight: "10px",
+                    cursor: "pointer",
+                    color: "#fff",
+                  }}
+                >
+                 &nbsp; Get in <span className="purple">TOUCH </span> ....
+                </p>
+              </Link>
+            </div>{" "}
+          </Col>
+        </Row>
+
         <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
