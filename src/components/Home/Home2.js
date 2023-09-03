@@ -41,7 +41,7 @@ function Home2() {
                 style={{
                   background: "#1B668A", // Set the color to purple
                   height: "4px",
-                  width: "50%",
+                  width: "40%",
                 }}
               />
               <Link to="/about" style={{ textDecoration: "none" }}>
@@ -53,7 +53,7 @@ function Home2() {
                     color: "#fff",
                   }}
                 >
-                  &nbsp;More <span className="purple">INFO </span> ....
+                  &nbsp;More <span className="purple">INFO </span> 
                 </p>
               </Link>
             </div>{" "}
@@ -68,7 +68,7 @@ function Home2() {
                 style={{
                   background: "#1B668A",
                   height: "4px",
-                  width: "50%",
+                  width: "40%",
                 }}
               />
               <Link to="/project" style={{ textDecoration: "none" }}>
@@ -80,7 +80,7 @@ function Home2() {
                     color: "#fff",
                   }}
                 >
-                  &nbsp;Explore my <span className="purple">PROJECTS </span> ....
+                  &nbsp;Explore <span className="purple">PROJECTS </span> 
                 </p>
               </Link>
             </div>{" "}
@@ -95,7 +95,7 @@ function Home2() {
                 style={{
                   background: "#1B668A",
                   height: "4px",
-                  width: "50%",
+                  width: "40%",
                 }}
               />
               <Link to="/resume" style={{ textDecoration: "none" }}>
@@ -107,7 +107,7 @@ function Home2() {
                     color: "#fff",
                   }}
                 >
-                 &nbsp; Check out my <span className="purple">CV </span> ....
+                 &nbsp;Resume<span className="purple"> Peek</span> 
                 </p>
               </Link>
             </div>{" "}
@@ -122,7 +122,7 @@ function Home2() {
                 style={{
                   background: "#1B668A",
                   height: "4px",
-                  width: "50%",
+                  width: "40%",
                 }}
               />
               <Link to="/contact" style={{ textDecoration: "none" }}>
@@ -134,7 +134,7 @@ function Home2() {
                     color: "#fff",
                   }}
                 >
-                 &nbsp; Get in <span className="purple">TOUCH </span> ....
+                 &nbsp; Contact <span className="purple">ME </span> 
                 </p>
               </Link>
             </div>{" "}
